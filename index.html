@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Planos de Saúde</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Calculadora de Planos de Saúde</h1>
+        
+        <label>Idade</label>
+        <input type="number" id="age">
+        
+        <label>Peso (kg)</label>
+        <input type="number" id="weight">
+        
+        <label>Altura (m)</label>
+        <input type="number" id="height" step="0.01">
+        
+        <button onclick="calcular()">Calcular</button>
+        
+        <div class="results" id="results">
+            <div class="imc-box" id="imcBox"></div>
+            
+            <div class="operator">
+                <h3>Operadora A</h3>
+                <div class="plan" id="planA1"></div>
+                <div class="plan" id="planA2"></div>
+                <div class="plan" id="planA3"></div>
+            </div>
+            
+            <div class="operator">
+                <h3>Operadora B</h3>
+                <div class="plan" id="planB1"></div>
+                <div class="plan" id="planB2"></div>
+                <div class="plan" id="planB3"></div>
+            </div>
+            
+            <div class="best" id="best"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
